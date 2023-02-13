@@ -8,7 +8,7 @@ on:
       - 'v*'
 
 env:
-  DOCKER_REPO_NAME: baileychant/isrepo
+  DOCKER_REPO_NAME: baileychant/webclass
 
 jobs:
   build:
