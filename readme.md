@@ -1,18 +1,14 @@
 # Assigment Instructions
 
 This assignment will begin to teach you how to work in a development team and show you how all of what we have learned
-comes together to enable a productive development process within a team. If you already have this setup by doing
-it in class, you need to do it again for the GitHub classroom assignment. You need to form a group, and you can
-find a group of 2-3 people by asking on Slack or the discussion board in Canvas for this unit. Each person in the group
-needs to complete the assignment, so that each member understands how to set everything up as the team leader. Each team
-member will submit their own GitHub classroom repository. If you have previously done this in class you will need to do
-a "docker compose down" in the folder of the previous project, so that all the services stop and are removed from that
-attempt.  *YOU WILL GET PROBLEMS IF YOU DON'T DO THIS!*
+comes together to enable a productive development process within a team.  You will need to create a group of 2-3 people and each member of the group is required to play the role of "team member" and "team leader".  All members of the group are required to create pull requests to merge a branch on GitHub; however, only the "team leader" should merge the branch to master after reviewing and approving it.
 
 To complete this assignment each partner will click the button to accept the assignment and follow the Installation
 instructions below. The first feature(s) that you and your partner(s) will make are to add your names to the readme file
 [here](readme.md). You will have 2 pull requests on your own repo and your partner(s) will have 2 pull requests on
 theirs. The end result is that each partner should have the experience of the team leader and a team member.
+
+*You will need to add your partner to as a collaborator in your repository settings, so that they see the project and fork it.*
 
 ## Steps
 
@@ -61,7 +57,7 @@ respective GitHub repos into Canvas.
 3. Add the docker username and docker secret to the repositories settings
 4. Add your partner's github to collaborators in the settings of the repository
 5. Click on the actions tab on your fork of my repo to enable actions if necessary.
-6. The person that forks needs to replace the name in [.github/workflows/publish.yml](.github/workflows/publish.yml]) on
+6. The person that forks needs to replace the name in [.github/workflows/publish.yml](.github/workflows/publish.yml) on
    line 11 with their docker repo
 7. The person that forks needs to change the [docker-compose.yml](docker-compose.yml) file line 5 with their docker repo
 8. Check the actions tab to make sure that it goes green, so that the image is published to the person that fork's
@@ -85,7 +81,7 @@ respective GitHub repos into Canvas.
 4. Make sure you don't have anything running "docker ps" if you do then kill the processes or do a "docker compose down"
    in the project directory of your old project.
 5. Startup the docker compose "docker compose up --build -d"
-6. View the master branch version of your project on [localhost](localhost)
+6. View the master branch version of your project on localhost
 7. View the live site preview "npm start" 
 
 ## Docker Commands
@@ -116,4 +112,5 @@ respective GitHub repos into Canvas.
 3. "npm run build" Builds the site using webpack and deploys to public_html and you can see it on localhost:8080 without
    rebuilding the dockerfile manually because of the volume share setup by the docker compose file.
 4. "npm run clean" Deletes anything in the public_html folder.
+5. "npx playwright test" <- Run the playwright tests
 
